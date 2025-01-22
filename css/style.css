@@ -1,0 +1,14 @@
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parallax h1, .parallax h2, .parallax p, .parallax a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
