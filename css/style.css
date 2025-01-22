@@ -38,6 +38,8 @@
     }
   }
   @media (prefers-color-scheme: light) {
+
+
     #services, #about, #contact{
         background-color: white !important;
     }
@@ -51,5 +53,8 @@
     h1,h2,h3,h4,p{
         color: black !important;
     }
-    
+
+    #home h1, #home p, #cont h2, #cont p, #cont h1{
+        color: white !important;
+    } 
   }
