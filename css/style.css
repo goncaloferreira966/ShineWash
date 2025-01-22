@@ -3,11 +3,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 600px;
+    min-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: white; /* Para texto ficar visível no parallax */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
+  
   
   .parallax h1, .parallax h2, .parallax p, .parallax a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -15,12 +20,19 @@
 
 
   @media (prefers-color-scheme: dark) {
-    p{
-        color: #000;
+    .navbar{
+        background-color: black !important;
+    }
+
+    .footer{
+        background-color: black !important;
     }
   }
   @media (prefers-color-scheme: light) {
-    p{
-        color: white;
+    .navbar{
+        background-color: white !important;
+    }
+    .footer{
+        background-color: white !important;
     }
   }
