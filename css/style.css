@@ -13,6 +13,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
 
+  
   /* width */
 ::-webkit-scrollbar {
     width: 0px;
@@ -27,15 +28,15 @@
         color:white;
     }
     #about {
-        background-image: linear-gradient(rgb(70, 9, 9) 0%, black 25%, black 50%, black 75%, rgb(55, 55, 55) 100%);
+        background-image: linear-gradient(rgb(28, 2, 2) 0%, black 25%, black 50%, black 75%, black   100%);
       }
 
     #services {
-        background-image: linear-gradient(rgb(125, 125, 125), rgb(65, 65, 65));
+        background-image: linear-gradient(rgb(44, 43, 43), rgb(35, 35, 35));
       }
 
       #contact{
-        background-image: linear-gradient( rgb(65, 65, 65), black);
+        background-image: linear-gradient( rgb(35, 35, 35), black);
     }
 
     h1,h2,h3,h4,p{
