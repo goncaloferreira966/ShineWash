@@ -54,6 +54,7 @@
     footer a {
       text-decoration: none;
       transition: color 0.3s;
+      font-size: 20px;
     }
     footer a:hover {
       color: #0d6efd; /* Azul padrão */

@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Wash</title>
+  <title>{#each items as item,i}
+     <!-- content here -->
+  {/each} Wash</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   rel="stylesheet"
 />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
@@ -22,7 +24,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"> <i class="bi bi-droplet"></i> Car Wash</a>
+      <a class="navbar-brand" href="#"> <i class="bi bi-droplet"></i> Shine Wash</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,7 +44,7 @@
   <header id="home" class="parallax"
     style="background-image: linear-gradient(transparent, black), url('assets/parallax1.jpg'); ;">
     <div class="container text-center text-white">
-      <h1 class="display-4">Bem-vindo à Car Wash</h1>
+      <h1 class="display-4">Bem-vindo à Shine Wash</h1>
       <p class="lead">Um lugar incrível para mostrar o seu trabalho</p>
       <!--<a href="#about" class="btn btn-primary btn-lg">Saiba Mais</a>-->
     </div>
@@ -198,7 +200,7 @@
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com" target="_blank" class="text-white mx-2">
-          <i class="fab fa-twitter"></i>
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
         <a href="https://instagram.com" target="_blank" class="text-white mx-2">
           <i class="fab fa-instagram"></i>
@@ -212,7 +214,7 @@
       </p>
       <!-- Conteúdo principal -->
       <p class="mb-0">
-        © <span id="currentYear"></span> Car Wash. Todos os direitos reservados.
+        © <span id="currentYear"></span> Shine Wash. Todos os direitos reservados.
       </p>
      
     </div>
