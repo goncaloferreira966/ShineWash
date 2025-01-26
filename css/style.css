@@ -63,3 +63,6 @@
       font-size: 14px;
     }
   
+    body {
+      background-image: linear-gradient(rgb(87, 100, 118) 0%, rgb(87, 100, 118) 25%, black 50%, black 75%, black   100%);
+    }
