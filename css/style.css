@@ -73,3 +73,35 @@ footer .footer p {
 body {
   background-image: linear-gradient(rgb(87, 100, 118) 0%, rgb(87, 100, 118) 25%, black 50%, black 75%, black 100%);
 }
+
+
+
+/* Parallax */
+#home {
+  position: relative;
+  background-image: url('assets/parallax1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  z-index: 0;
+}
+
+/* Seções normais */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de blur para outras seções */
+section:not(#home) {
+  backdrop-filter: blur(10px); 
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+
+/* Texto nas seções */
+section h2, section p {
+  color: #fff;
+  z-index: 2;
+}

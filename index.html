@@ -12,6 +12,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.0/dist/color-thief.min.js"></script>
+
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -221,6 +224,25 @@
 
   document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+  window.addEventListener('load', function() {
+    const colorThief = new ColorThief();
+    
+    // Pegue a imagem do parallax
+    const image = new Image();
+    image.src = 'assets/parallax1.jpg';
+    
+    image.onload = function() {
+      // Quando a imagem carregar, pegamos a cor dominante
+      const dominantColor = colorThief.getColor(image);
+      const rgbColor = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
+      
+      // Agora aplicamos essa cor nas seções
+      document.querySelectorAll('section:not(#home)').forEach((section) => {
+        section.style.backgroundColor = rgbColor;
+      });
+    };
+  });
+  
   function sendEmail() {
 
     Email.send({
