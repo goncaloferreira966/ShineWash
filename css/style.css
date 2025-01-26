@@ -1,99 +1,49 @@
-.parallax {
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  min-height: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  color: white;
-  /* Para texto ficar visível no parallax */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/assets/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/assets/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/assets/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 }
 
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0px !important;
 }
-
-
-.parallax h1,
-.parallax h2,
-.parallax p,
-.parallax a {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-label {
-  color: white;
-}
-
-
-#about {
-  background-image: linear-gradient(rgb(28, 2, 2) 0%, black 25%, black 50%, black 75%, black 100%);
-}
-
-#services {
-  background-image: linear-gradient(rgb(44, 43, 43), rgb(35, 35, 35));
-}
-
-#contact {
-  background-image: linear-gradient(rgb(35, 35, 35), black);
-}
-
-
-h1,
-h2,
-h3,
-h4,
-p {
-  color: white !important;
-}
-
-.navbar {
-  background-color: transparent !important;
-}
-
-.footer {
-  background-color: black !important;
-}
-
-footer a {
-  text-decoration: none;
-  transition: color 0.3s;
-  font-size: 20px;
-}
-
-footer .footer p {
-  font-size: 14px;
-}
-
-body {
-  background-image: linear-gradient(rgb(87, 100, 118) 0%, rgb(87, 100, 118) 25%, black 50%, black 75%, black 100%);
-}
-
-
-
-/* Parallax */
-#home {
-  position: relative;
-  background-image: url('assets/parallax1.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh; 
-  z-index: 0;
-}
-
-/* Seções normais */
-section {
-  position: relative;
-  z-index: 1;
-  padding: 50px 0;
-  background-size: cover;
-  background-position: center;
-}
-
