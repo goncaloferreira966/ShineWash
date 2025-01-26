@@ -1,68 +1,80 @@
 .parallax {
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    color: white; /* Para texto ficar visível no parallax */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  }
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  /* Para texto ficar visível no parallax */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
 
-  
-  /* width */
+
+/* width */
 ::-webkit-scrollbar {
-    width: 0px;
-  }
-  
-  
-  .parallax h1, .parallax h2, .parallax p, .parallax a {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  }
+  width: 0px;
+}
 
-    label{
-        color:white;
-    }
-    #about {
-        background-image: linear-gradient(rgb(28, 2, 2) 0%, black 25%, black 50%, black 75%, black   100%);
-      }
 
-    #services {
-        background-image: linear-gradient(rgb(44, 43, 43), rgb(35, 35, 35));
-      }
+.parallax h1,
+.parallax h2,
+.parallax p,
+.parallax a {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
 
-      #contact{
-        background-image: linear-gradient( rgb(35, 35, 35), black);
-    }
+label {
+  color: white;
+}
 
-    h1,h2,h3,h4,p{
-        color: white !important;
-    }
+#about {
+  background-image: linear-gradient(rgb(28, 2, 2) 0%, black 25%, black 50%, black 75%, black 100%);
+}
 
-    .navbar{
-        background-color: transparent !important;
-    }
+#services {
+  background-image: linear-gradient(rgb(44, 43, 43), rgb(35, 35, 35));
+}
 
-    .footer{
-        background-color: black !important;
-    }
+#contact {
+  background-image: linear-gradient(rgb(35, 35, 35), black);
+}
 
-    footer a {
-      text-decoration: none;
-      transition: color 0.3s;
-      font-size: 20px;
-    }
-    footer a:hover {
-      color: #0d6efd; /* Azul padrão */
-    }
-    footer .footer p {
-      font-size: 14px;
-    }
-  
-    body {
-      background-image: linear-gradient(rgb(87, 100, 118) 0%, rgb(87, 100, 118) 25%, black 50%, black 75%, black   100%);
-    }
+h1,
+h2,
+h3,
+h4,
+p {
+  color: white !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.footer {
+  background-color: black !important;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: #0d6efd;
+  /* Azul padrão */
+}
+
+footer .footer p {
+  font-size: 14px;
+}
+
+body {
+  background-image: linear-gradient(rgb(87, 100, 118) 0%, rgb(87, 100, 118) 25%, black 50%, black 75%, black 100%);
+}
