@@ -32,6 +32,7 @@ label {
   color: white;
 }
 
+
 #about {
   background-image: linear-gradient(rgb(28, 2, 2) 0%, black 25%, black 50%, black 75%, black 100%);
 }
@@ -43,6 +44,7 @@ label {
 #contact {
   background-image: linear-gradient(rgb(35, 35, 35), black);
 }
+
 
 h1,
 h2,
@@ -91,17 +93,7 @@ section {
   position: relative;
   z-index: 1;
   padding: 50px 0;
-  transition: background-color 0.3s ease;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Efeito de blur para outras seções */
-section:not(#home) {
-  backdrop-filter: blur(10px); 
-  background-color: rgba(0, 0, 0, 0.2); 
-}
-
-/* Texto nas seções */
-section h2, section p {
-  color: #fff;
-  z-index: 2;
-}

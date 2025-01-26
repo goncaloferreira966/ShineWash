@@ -224,25 +224,6 @@
 
   document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-  window.addEventListener('load', function() {
-    const colorThief = new ColorThief();
-    
-    // Pegue a imagem do parallax
-    const image = new Image();
-    image.src = 'assets/parallax1.jpg';
-    
-    image.onload = function() {
-      // Quando a imagem carregar, pegamos a cor dominante
-      const dominantColor = colorThief.getColor(image);
-      const rgbColor = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
-      
-      // Agora aplicamos essa cor nas seções
-      document.querySelectorAll('section:not(#home)').forEach((section) => {
-        section.style.backgroundColor = rgbColor;
-      });
-    };
-  });
-  
   function sendEmail() {
 
     Email.send({
