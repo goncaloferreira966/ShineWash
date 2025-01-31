@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.0/dist/color-thief.min.js"></script>
 
 </head>
 
@@ -113,45 +115,45 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist over the mountains">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Bear closeup">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
             </div>
         </div>
 
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="My beloved typewriter">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Empty ghost train">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Sailing">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/polimento.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
             </div>
         </div>
     </div>
@@ -180,7 +182,8 @@
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/avatar.jpg" class="w3-image w3-round" style="width:100%">
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/avatar.jpg" class="w3-image w3-round"
+                    style="width:100%">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
@@ -191,7 +194,7 @@
                     mail@mail.com<br>
                 </div>
                 <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                <form action="/action_page.php" target="_blank">
+                <form onsubmit="sendEmail(event)">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
                             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -211,26 +214,65 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 ">
-        <a style="font-size: 20px  !important;" href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a style="font-size: 20px  !important;" href="#home" class="w3-button w3-light-grey"><i
+                class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://facebook.com" target="_blank" class="text-white mx-2" style="color: #1877F2 !important; text-decoration: none;">
+            <a href="https://facebook.com" target="_blank" class="text-white mx-2"
+                style="color: #1877F2 !important; text-decoration: none;">
                 <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" class="text-white mx-2" style="color: #E4405F !important;text-decoration: none;">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white mx-2"
+                style="color: #E4405F !important;text-decoration: none;">
                 <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://twitter.com" target="_blank" class="text-white mx-2" style="color: white !important;text-decoration: none;">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white mx-2"
+                style="color: white !important;text-decoration: none;">
                 <i class="fab fa-x-twitter"></i>
-              </a>
+            </a>
 
         </div>
         <p> © <span id="currentYear"></span> Shine Wash. Todos os direitos reservados.</a></p>
-        <p> Powered By <a style="font-size: 17px !important;text-decoration: none;" href="https://www.linkedin.com/in/gonçaloferreira96/"> Gonçalo Ferreira <i style="color: #1877F2;" class="fab fa-linkedin"></i></a></p>
+        <p> Powered By <a style="font-size: 17px !important;text-decoration: none;"
+                href="https://www.linkedin.com/in/gonçaloferreira96/"> Gonçalo Ferreira <i style="color: #1877F2;"
+                    class="fab fa-linkedin"></i></a></p>
 
     </footer>
 
     <script>
+
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function sendEmail(event) {
+            event.preventDefault();
+
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "sender@email_address.com",
+                Password: "Enter your password",
+                To: 'receiver@email_address.com',
+                From: "sender@email_address.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                    Swal.fire({
+                        title: 'Email Enviado!',
+                        text: 'A sua mensagem foi enviada com sucesso.',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    });
+                })
+                .catch(function (error) {
+                    alert("Cheguei3")
+                    Swal.fire({
+                        title: 'Erro!',
+                        text: 'Ocorreu um erro ao enviar o e-mail.',
+                        icon: 'error',
+                        confirmButtonText: 'Tentar Novamente'
+                    });
+                });
+        }
 
         // Modal Image Gallery
         function onClick(element) {
