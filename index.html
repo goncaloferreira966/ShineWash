@@ -197,13 +197,13 @@
                 <form onsubmit="sendEmail(event)">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
+                            <input id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="E-mail" required name="Email">
+                            <input id="email" class="w3-input w3-border" type="text" placeholder="E-mail" required name="Email">
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Message">
+                    <input id="mensagem" class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Message">
                     <button class="w3-button w3-black w3-right w3-section" type="submit">
                         <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
                     </button>
@@ -247,10 +247,10 @@
             emailjs.init("VgoF2A8DM_u-ybzyQ"); 
             emailjs.send("service_n3j51c1", "template_krdz8yx", {
                 to_name: "Ricardo Ramos",
-                from_name: "Ricardo Ramos",
-                from_email: "badalha81@gmail.com",
+                from_name: document.getElementById("name").value,
+                //from_email: "badalha81@gmail.com",
                 //subject: "subject",
-                message: "message"
+                message: `${document.getElementById("mensagem").value} Responde-me através do E-mail: ${document.getElementById("email").value}`
             })
             .then(function(response) {
                 console.log("Resposta do servidor:", response);
