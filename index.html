@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.0/dist/color-thief.min.js"></script>
@@ -245,17 +245,18 @@
         function sendEmail(event) {
             event.preventDefault();
 
-
+            console.log("Tentando enviar email...");
             Email.send({
                 Host: "smtp.gmail.com",
-                Username: "sender@email_address.com",
-                Password: "Enter your password",
-                To: 'receiver@email_address.com',
-                From: "sender@email_address.com",
+                Username: "badalha81@gmail.com",
+                Password: "lbyy fvpb kqkt mzgv",
+                To: 'goncalo.santos.ferreira96@gmail.com',//alterar para o email do ricardo
+                From: "badalha81@gmail.com",
                 Subject: "Sending Email using javascript",
                 Body: "Well that was easy!!",
             })
                 .then(function (message) {
+                    console.log("Resposta do servidor:", message);
                     Swal.fire({
                         title: 'Email Enviado!',
                         text: 'A sua mensagem foi enviada com sucesso.',
@@ -264,7 +265,7 @@
                     });
                 })
                 .catch(function (error) {
-                    alert("Cheguei3")
+                    console.error("Erro ao enviar email:", error);
                     Swal.fire({
                         title: 'Erro!',
                         text: 'Ocorreu um erro ao enviar o e-mail.',
