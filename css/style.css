@@ -51,3 +51,15 @@ body, html {
 ::-webkit-scrollbar {
   width: 0px !important;
 }
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 30px;
+  padding: 5px;
+}
+
+footer p {
+  font-size: 17px;
+  padding: 5px;
+}

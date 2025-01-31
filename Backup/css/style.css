@@ -1,0 +1,98 @@
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  /* Para texto ficar visível no parallax */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+.parallax h1,
+.parallax h2,
+.parallax p,
+.parallax a {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: white !important;
+}
+
+label {
+  color: black;
+}
+
+
+#about {
+  background-color: white;
+}
+
+#services {
+  background-color: white !important;
+}
+
+#contact {
+  background-color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: black !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.footer {
+  background-color: white !important;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+footer .footer p {
+  font-size: 14px;
+}
+
+body{
+  background-color: white;
+}
+
+
+/* Parallax */
+#home {
+  position: relative;
+  background-image: url('assets/parallax1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  z-index: 0;
+}
+
+/* Seções normais */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+}
+
