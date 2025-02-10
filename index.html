@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #d7c7ac !important;">
     <a href="https://api.whatsapp.com/send?phone=351965127148" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
         </a>
@@ -203,7 +203,7 @@
                             <input minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input id="email" class="w3-input w3-border" type="email" placeholder="E-mail" required name="Email">
+                            <input id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
                         </div>
                     </div>
                     <input minlength="10" id="mensagem" class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Message">
@@ -216,7 +216,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 ">
+    <footer class="w3-center w3-black w3-padding-64 " style="background-color: #112c4c !important;">
        <!-- <a style="font-size: 20px  !important;" href="#home" class="w3-button w3-light-grey"><i
                 class="fa fa-arrow-up w3-margin-right"></i>To the top</a>-->
         <div class="w3-xlarge w3-section">
@@ -232,6 +232,10 @@
                 style="color: white !important;text-decoration: none;">
                 <i class="fab fa-x-twitter"></i>
             </a>-->
+            <a href="https://api.whatsapp.com/send?phone=351965127148" target="_blank" class="text-white mx-2"
+                style="color: #25d366 !important;text-decoration: none;">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>
 
         </div>
         <p> © <span id="currentYear"></span> Shine Wash. Todos os direitos reservados.</a></p>
@@ -253,7 +257,7 @@
                 from_name: document.getElementById("name").value,
                 //from_email: "badalha81@gmail.com",
                 //subject: "subject",
-                message: `${document.getElementById("mensagem").value} Responde-me através do E-mail: ${document.getElementById("email").value}`
+                message: `${document.getElementById("mensagem").value} Responde-me através do Contacto: ${document.getElementById("email").value}`
             })
             .then(function(response) {
                 console.log("Resposta do servidor:", response);
