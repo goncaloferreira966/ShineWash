@@ -100,12 +100,12 @@
         <div class="w3-quarter w3-section w3-xlarge">
             <span style="color: #f2be63 !important;" class="w3-xlarge">3. </span>
            <!-- <span style="color: #f2be63 !important;" class="w3-xlarge">89+</span><br>-->
-            Happy Clients
+            Agendar o Serviço
         </div>
         <div class="w3-quarter w3-section w3-xlarge">
             <span style="color: #f2be63 !important;" class="w3-xlarge">4. </span>
             <!--<span style="color: #f2be63 !important;" class="w3-xlarge">150+</span><br>-->
-            Meetings
+            Avaliar o Serviço
         </div>
     </div>
 
@@ -184,34 +184,34 @@
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
                 <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/avatar.jpg" class="w3-image w3-round"
-                    style="width:100%; border-radius: 20px;">
+                    style="width:85%; border-radius: 20px;">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Torres Vedras, Lisboa<br>
                     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telemóvel: +351 965 127 148<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> E-mail: <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> E-mail: Gomesramosricardo@outlook.com<br>
                 </div>
                 <p>Fico à espera do seu contacto:</p>
                 <form onsubmit="sendEmail(event)">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
+                            <input style="border-radius: 5px;" minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
+                            <input style="border-radius: 5px;" id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
                         </div>
                     </div>
 
-                    <select class="w3-input w3-border" style="height: 40px;" name="servico" id="servico-select">
-                        <option value="">--Seleciona uma Opção--</option>
-                        <option value="dog">Interior</option>
-                        <option value="cat">Exterior</option>
-                        <option value="hamster">Interior & Exterior</option>
-                        <option value="cat">Mobiliário 🛋️</option>
+                    <select required class="w3-input w3-border" style="height: 40px; border-radius: 5px;" name="servico" id="servico-select">
+                        <option value="">Escolha o Serviço Desejado</option>
+                        <option value="Interior">Interior</option>
+                        <option value="Exterior">Exterior</option>
+                        <option value="Interior & Exterior">Interior & Exterior</option>
+                        <option value="Mobiliário">Mobiliário 🛋️</option>
                       </select>
                       
-                    <input style="margin-top: 5px;" minlength="10" id="mensagem" class="w3-input w3-border" type="text" placeholder="Morada" required name="Message">
+                    <input style="border-radius: 5px;margin-top: 5px;" minlength="10" id="mensagem" class="w3-input w3-border" type="text" placeholder="Morada" required name="Message">
                     <button class="w3-button w3-black w3-right w3-section" type="submit">
                         <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
                     </button>
@@ -225,7 +225,7 @@
        <!-- <a style="font-size: 20px  !important;" href="#home" class="w3-button w3-light-grey"><i
                 class="fa fa-arrow-up w3-margin-right"></i>To the top</a>-->
         <div class="w3-xlarge w3-section">
-            <a href="https://facebook.com" target="_blank" class="text-white mx-2"
+            <a href="https://www.facebook.com/profile.php?id=61567103904748" target="_blank" class="text-white mx-2"
                 style="color: #1877F2 !important; text-decoration: none;">
                 <i class="fab fa-facebook-f"></i>
             </a>
@@ -267,7 +267,7 @@
             .then(function(response) {
                 console.log("Resposta do servidor:", response);
                     Swal.fire({
-                        title: 'Email Enviado!',
+                        title: 'Mensagem Enviada!',
                         text: 'A sua mensagem foi enviada com sucesso.',
                         icon: 'success',
                         confirmButtonText: 'Ok'
@@ -276,7 +276,7 @@
                 console.error("Erro ao enviar email:", error);
                     Swal.fire({
                         title: 'Erro!',
-                        text: 'Ocorreu um erro ao enviar o e-mail.',
+                        text: 'Ocorreu um erro ao enviar a mensagem.',
                         icon: 'error',
                         confirmButtonText: 'Tentar Novamente'
                     });
