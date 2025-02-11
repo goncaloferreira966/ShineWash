@@ -153,6 +153,7 @@
 
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+      
         function sendEmail(event) {
             event.preventDefault();
             emailjs.init("VgoF2A8DM_u-ybzyQ"); 
@@ -161,7 +162,7 @@
                 from_name: document.getElementById("name").value,
                 //from_email: "badalha81@gmail.com",
                 //subject: "subject",
-                message: `${document.getElementById("mensagem").value} Responde-me através do Contacto: ${document.getElementById("email").value}`
+                message: `Serviço Desejado: ${document.getElementById("servico-select").value}.\nMorada: ${document.getElementById("mensagem").value}.\nContacto: ${document.getElementById("email").value}`
             })
             .then(function(response) {
                 console.log("Resposta do servidor:", response);
