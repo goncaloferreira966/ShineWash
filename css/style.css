@@ -8,6 +8,13 @@ h6 {
   font-family: "Lato", sans-serif;
 }
 
+.container { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+.package { border: 1px solid #ccc; padding: 20px; width: 250px; border-radius: 8px; }
+.package h2 { color: #112c4c ; }
+.comparison-table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+.comparison-table th, .comparison-table td { border: 1px solid #112c4c ; padding: 10px; }
+.comparison-table th { background-color: #112c4c ; color: white; }
+
 .float{
 	position:fixed;
 	width:60px;
