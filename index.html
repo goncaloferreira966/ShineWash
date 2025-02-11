@@ -3,6 +3,7 @@
 
 <head>
     <title>Shine Wash</title>
+    <link rel="icon" type="image/x-icon" href="https://goncaloferreira966.github.io/Projeto_RR/assets/parallax1.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -27,7 +28,7 @@
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Shine Wash</a>
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Shine Wash</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sobre</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contacto</a>
@@ -274,7 +275,7 @@
                 from_name: document.getElementById("name").value,
                 //from_email: "badalha81@gmail.com",
                 //subject: "subject",
-                message: `${document.getElementById("mensagem").value} Responde-me através do Contacto: ${document.getElementById("email").value}`
+                message: `${document.getElementById("mensagem").value} \nResponde-me através do Contacto: ${document.getElementById("email").value}`
             })
             .then(function(response) {
                 console.log("Resposta do servidor:", response);
