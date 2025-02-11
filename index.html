@@ -51,7 +51,7 @@
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
+        <h3 class="w3-center">Sobre Mim</h3>
         <p class="w3-center"><em>I love photography</em></p>
         <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -66,7 +66,7 @@
             <div class="w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>Ricardo Ramos</b></p><br>
                 <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/avatar.jpg" style="border-radius: 20px;" class="w3-round w3-image"
-                    alt="Photo of Me" width="400">
+                    alt="Photo of Me" width="85%">
             </div>
 
             <!-- Hide this text on small devices -->
@@ -79,6 +79,16 @@
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
             </div>
         </div>
     </div>
@@ -143,7 +153,7 @@
 
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m4">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg" style="width:100%"
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg" style="width:100%"
                     onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
             </div>
 
@@ -153,7 +163,7 @@
             </div>
 
             <div class="w3-col m4">
-                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg" style="width:100%"
+                <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg" style="width:100%"
                     onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
             </div>
         </div>
@@ -182,9 +192,9 @@
         <p class="w3-center"><em>No seu domicilio!</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
+            <div class="w3-col m4 w3-container" style="text-align: center;">
                 <img src="https://goncaloferreira966.github.io/Projeto_RR/assets/avatar.jpg" class="w3-image w3-round"
-                    style="width:85%; border-radius: 20px;">
+                    style="width:90%; border-radius: 20px;">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
@@ -196,14 +206,14 @@
                 <form onsubmit="sendEmail(event)">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input style="border-radius: 5px;" minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
+                            <input style="border-radius: 5px; margin-top: 5px;" minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input style="border-radius: 5px;" id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
+                            <input style="border-radius: 5px; margin-top: 5px;" id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
                         </div>
                     </div>
 
-                    <select required class="w3-input w3-border" style="height: 40px; border-radius: 5px;" name="servico" id="servico-select">
+                    <select required class="w3-input w3-border" style="height: 40px; border-radius: 5px; margin-top: 0px;" name="servico" id="servico-select">
                         <option value="">Escolha o Serviço Desejado</option>
                         <option value="Interior">Interior</option>
                         <option value="Exterior">Exterior</option>
@@ -212,8 +222,8 @@
                       </select>
                       
                     <input style="border-radius: 5px;margin-top: 5px;" minlength="10" id="mensagem" class="w3-input w3-border" type="text" placeholder="Morada" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+                    <button style="border-radius: 5px; background-color: #112c4c !important;" class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> Enviar Mensagem
                     </button>
                 </form>
             </div>
