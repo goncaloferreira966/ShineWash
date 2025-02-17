@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.0/dist/color-thief.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 </head>
 
@@ -29,6 +31,10 @@
                 <i class="fa fa-bars"></i>
             </a>
             <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Shine Wash</a>
+            <a href="details.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-car"></i> Serviços</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sobre</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contacto</a>
             <!-- <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sobre</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contacto</a>-->
@@ -36,9 +42,10 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <!-- <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Sobre</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contacto</a>-->
+            <a href="details.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Serviços</a>
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Sobre</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contacto</a>
         </div>
     </div>
 
@@ -62,66 +69,82 @@
 -->
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">O Meu Trabalho</h3>
+        <h3 style="color: #112c4c;" class="w3-center">Serviços</h3>
         <div class="container">
-            <div class="package">
-                <h2>Básico</h2>
-                <p>Lavagem externa + aspiração interna</p>
-                <p><strong>Preço: €10</strong></p>
+
+    
+
+        <div class="row" >
+            <div class="col-12 col-md-4">
+                <div class="card" style="width: 18rem; border-radius: 20px;">
+                    <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" class="card-img-top" src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 style="color: #112c4c;" class="card-title">Pack Básico</h5>
+                      <p class="card-text">Este Pack inclui um tratamento básico etc....</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-times" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-times" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-times" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                    </ul>
+                    <div class="card-body">
+                        <strong style="color: #112c4c;" class="list-group-item"> Preço:     50€</strong>
+                        <!--<a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>-->
+                    </div>
+                  </div>
             </div>
-            <div class="package">
-                <h2>Intermediário</h2>
-                <p>Lavagem externa, aspiração interna, enceramento</p>
-                <p><strong>Preço: €20</strong></p>
+
+            <div class="col-12 col-md-4">
+
+                <div class="card" style="width: 18rem; border-radius: 20px;">
+                    <img  style="border-top-left-radius: 20px;border-top-right-radius: 20px;" class="card-img-top" src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 style="color: #112c4c;" class="card-title">Pack Intermédio</h5>
+                      <p class="card-text">Este Pack inclui um tratamento Médfio etc....</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-times" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                    </ul>
+                    <div class="card-body">
+                        <strong style="color: #112c4c;" class="list-group-item"> Preço:     100€</strong>
+                        <!--<a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>-->
+                    </div>
+                  </div>
             </div>
-            <div class="package">
-                <h2>Premium</h2>
-                <p>Lavagem completa, enceramento, polimento, tratamento de couro</p>
-                <p><strong>Preço: €40</strong></p>
+
+            <div class="col-12 col-md-4">
+
+                <div class="card" style="width: 18rem; border-radius: 20px;">
+                    <img  style="border-top-left-radius: 20px;border-top-right-radius: 20px;" class="card-img-top" src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 style="color: #112c4c;" class="card-title">Pack Premium</h5>
+                      <p class="card-text">Este Pack inclui um tratamento Premium etc....</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Cras justo odio</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+                    </ul>
+                    <div class="card-body">
+                        <strong style="color: #112c4c;" class="list-group-item"> Preço:     200€</strong>
+                        <!--<a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>-->
+                    </div>
+                  </div>
             </div>
+
         </div>
-
-        <h2>Comparação de Pacotes</h2>
-        <table class="comparison-table">
-            <tr>
-                <th>Serviço</th>
-                <th>Básico</th>
-                <th>Intermediário</th>
-                <th>Premium</th>
-            </tr>
-            <tr>
-                <td>Lavagem Externa</td>
-                <td>✔️</td>
-                <td>✔️</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Aspiração Interna</td>
-                <td>✔️</td>
-                <td>✔️</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Enceramento</td>
-                <td>❌</td>
-                <td>✔️</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Polimento</td>
-                <td>❌</td>
-                <td>❌</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Tratamento de Couro</td>
-                <td>❌</td>
-                <td>❌</td>
-                <td>✔️</td>
-            </tr>
-        </table>
-
-
+    </div>
     </div>
 
 

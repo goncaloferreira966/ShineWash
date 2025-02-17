@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.0/dist/color-thief.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 </head>
 
@@ -29,6 +31,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Shine Wash</a>
+            <a href="details.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-car"></i> Serviços</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sobre</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contacto</a>
@@ -36,6 +39,7 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="details.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Serviços</a>
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Sobre</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contacto</a>
@@ -52,7 +56,7 @@
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">Sobre Mim</h3>
+        <h3 style="color: #112c4c;" class="w3-center">Sobre Mim</h3>
         <p class="w3-center"><em>I love photography</em></p>
         <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -129,7 +133,7 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">O Meu Trabalho</h3>
+        <h3 style="color: #112c4c;" class="w3-center">O Meu Trabalho</h3>
         <p class="w3-center"><em>Aqui Ficam Alguns dos meus Trabalhos.<br> Clique nas Imagens para Ver em Estilo Galeria.</em></p><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -191,7 +195,7 @@
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">Onde Trabalho?</h3>
+        <h3 style="color: #112c4c;" class="w3-center">Onde Trabalho?</h3>
         <p class="w3-center"><em>No seu domicilio!</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
