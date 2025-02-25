@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background-color: #d7c7ac !important;">
@@ -58,652 +62,690 @@
     </div>
 
 
-    <!-- Second Parallax Image with Portfolio Text 
-    <div class="bgimg-2 w3-display-container w3-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">Portfolio</span>
-        </div>
-    </div>
--->
+
     <!-- Container (Portfolio Section) -->
+
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 style="color: #112c4c;" class="w3-center">Serviços</h3>
-        <h3 style="text-align: center;">Pack Bronze</h3>
-        <div class="row">
+        <h3 style="color: #112c4c;" class="w3-center">Os Meus Serviços</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a id="bronze-tab" data-toggle="tab" href="#bronze">Pack Bronze</a></li>
+            <li><a  id="ouro-tab" data-toggle="tab" href="#ouro">Pack Ouro</a></li>
+            <li><a  id="platina-tab" data-toggle="tab" href="#platina">Pack Platina</a></li>
+            <li><a id="outros-tab" data-toggle="tab" href="#outros">Outros Serviços Auto</a></li>
+            <li><a id="estofados-tab" data-toggle="tab" href="#estofados">Estofados</a></li>
+        </ul>
 
-            <div class="container">
-                <div class="row justify-content-center col-md-12">
+
+   
+
+        <div class="tab-content">
+            <div id="bronze" class="tab-pane fade in active">
+                <div class="w3-content w3-container w3-padding-64" id="portfolio">
+                    <h3 style="text-align: center;">Pack Bronze</h3>
+                    <div class="row">
+
+                        <div class="container">
+                            <div class="row justify-content-center col-md-12">
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Bronze Interior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Limpeza dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização dos Estofos</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização da Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Hidratação dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Hidratação das Peles</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 25€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Bronze Exterior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até
+                                                45 Dias
+                                                (Efeito Hidrofóbico)</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Descontaminação da Pintura Química e Manual
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 25€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 40€</strong>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 59€</strong>
+                                        </div>
 
 
 
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço:
+                                                109€</strong>
+                                        </div>
 
 
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Bronze Interior</h5>
-                                <p class="card-text"></p>
+
+                                    </div>
+                                </div>
+
+
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Limpeza dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização dos Estofos</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização da Bagageira</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Hidratação dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Hidratação das Peles</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 25€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
+
+
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="ouro" class="tab-pane fade">
+                <div class="w3-content w3-container w3-padding-64" id="portfolio2">
+                    <h3 style="text-align: center;">Pack Ouro</h3>
+                    <div class="row">
+
+                        <div class="container">
+                            <div class="row justify-content-center col-md-12">
 
 
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Bronze Exterior</h5>
-                                <p class="card-text"></p>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Ouro Interior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização dos Estofos</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Higienização da Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Hidratação dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Hidratação das Peles</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 45€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Ouro Exterior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até
+                                                45 Dias
+                                                (Efeito Hidrofóbico)</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Descontaminação da Pintura Química e Manual
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
+                                            <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
+                                                    aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 39€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 55€</strong>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
+                                        </div>
+
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço:
+                                                129€</strong>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até 45 Dias
-                                    (Efeito Hidrofóbico)</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Descontaminação da Pintura Química e Manual</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 25€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
+
+
                         </div>
                     </div>
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
-                                <p class="card-text"></p>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 40€</strong>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 59€</strong>
-                            </div>
-
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 109€</strong>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-
                 </div>
 
+            </div>
+            <div id="platina" class="tab-pane fade">
+                <div class="w3-content w3-container w3-padding-64" id="portfolio3">
+                    <h3 style="text-align: center;">Pack Platina</h3>
+                    <div class="row">
+
+                        <div class="container">
+                            <div class="row justify-content-center col-md-12">
+
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Platina Interior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Higienização dos Estofos</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Higienização da Bagageira</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Hidratação dos Plásticos</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Hidratação das Peles</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Pack Platina Exterior</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até
+                                                45 Dias
+                                                (Efeito Hidrofóbico)</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Descontaminação da Pintura Química e Manual
+                                            </li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 99€</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Bronze Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 79€</strong>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Ouro Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
+                                        </div>
+
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Interior</li>
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Pack Platina Exterior</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço:
+                                                149€</strong>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="outros" class="tab-pane fade">
+                <div class="w3-content w3-container w3-padding-64" id="portfolio3">
+                    <h3 style="text-align: center;">Outros Serviços Auto</h3>
+                    <div class="row">
+
+                        <div class="container">
+                            <div class="row justify-content-center col-md-12">
+
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Shine Wash Home</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Polimento e Revestimento Cerâmico</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob
+                                                Orçamento</strong>
+                                            <!--<a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="estofados" class="tab-pane fade">
+                <div class="w3-content w3-container w3-padding-64" id="portfolio3">
+                    <h3 style="text-align: center;">Estofados</h3>
+                    <div class="row">
+
+                        <div class="container">
+                            <div class="row justify-content-center col-md-12">
+
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Lavagem de Sofás</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Sofás de 2 Lugares</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 59€</strong>
+
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Sofás de 3 Lugares</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
+
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Sofás de 4 Lugares</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
+
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Sofás de 5 ou Mais Lugares</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob
+                                                Orçamento</strong>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Lavagem de Cadeiras</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Cadeiras (Mínimo de 4 Cadeiras)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 10€</strong>
+
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Cadeiras (10+ Cadeiras)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob
+                                                Orçamento</strong>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
+                                    <div class="card" style="width: 28rem; border-radius: 20px;">
+                                        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
+                                            class="card-img-top"
+                                            src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 style="color: #112c4c;" class="card-title">Lavagem de Colchões</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Solteiro (Duas Faces)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 49€</strong>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Casal (Duas Faces)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> Queen Size (Duas Faces)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 79€</strong>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
+                                                    aria-hidden="true"></i> King Size (Duas Faces)</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
 
-    <div class="w3-content w3-container w3-padding-64" id="portfolio2">
-        <h3 style="text-align: center;">Pack Ouro</h3>
-        <div class="row">
 
-            <div class="container">
-                <div class="row justify-content-center col-md-12">
 
 
 
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Ouro Interior</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização dos Estofos</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Higienização da Bagageira</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Hidratação dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Hidratação das Peles</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 45€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Ouro Exterior</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até 45 Dias
-                                    (Efeito Hidrofóbico)</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Descontaminação da Pintura Química e Manual</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
-                                <li class="list-group-item"><i style="color: #E4405F;" class="fa fa-times"
-                                        aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 39€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
-                                <p class="card-text"></p>
-                            </div>
 
 
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 55€</strong>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
-                            </div>
-
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 129€</strong>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="w3-content w3-container w3-padding-64" id="portfolio3">
-        <h3 style="text-align: center;">Pack Platina</h3>
-        <div class="row">
-
-            <div class="container">
-                <div class="row justify-content-center col-md-12">
-
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Platina Interior</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiração do Habitáculo e Bagageira</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aspiraçãos dos Tapetes</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Higienização dos Tapetes e Alcatifa</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Higienização dos Estofos</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Higienização das Peles e/ou Alcântaras</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Higienização da Bagageira</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Hidratação dos Plásticos</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Hidratação das Peles</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Pack Platina Exterior</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Manual Carroçaria com Luva Wash Mitt</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Detalhada das Jantes</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Secagem Manual com Toalha Microfibra</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Limpeza Exterior dos Vidros</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pré-Lavagem com Snow Foam</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Lavagem Detalhada dos Pneus</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aplicação de Cera Protetora de Duração até 45 Dias
-                                    (Efeito Hidrofóbico)</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Condicionador de Pneus (Brilho)</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Descontaminação da Pintura Química e Manual</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Aplicação de Cera Cerâmica</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Proteção (de 6 meses até 1 ano)</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Selante Pára-Brisas & Espelhos</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 99€</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Combinações de Pack's</h5>
-                                <p class="card-text"></p>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Bronze Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 79€</strong>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Ouro Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
-                            </div>
-
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Interior</li>
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Pack Platina Exterior</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 149€</strong>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="w3-content w3-container w3-padding-64" id="portfolio3">
-        <h3 style="text-align: center;">Outros Serviços Auto</h3>
-        <div class="row">
-
-            <div class="container">
-                <div class="row justify-content-center col-md-12">
-
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Shine Wash Home</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Polimento e Revestimento Cerâmico</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob Orçamento</strong>
-                                <!--<a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>-->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="w3-content w3-container w3-padding-64" id="portfolio3">
-        <h3 style="text-align: center;">Estofados</h3>
-        <div class="row">
-
-            <div class="container">
-                <div class="row justify-content-center col-md-12">
-
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img1.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Lavagem de Sofás</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Sofás de 2 Lugares</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 59€</strong>
-
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Sofás de 3 Lugares</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
-
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Sofás de 4 Lugares</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
-
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Sofás de 5 ou Mais Lugares</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob Orçamento</strong>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img2.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Lavagem de Cadeiras</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Cadeiras (Mínimo de 4 Cadeiras)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 10€</strong>
-
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Cadeiras (10+ Cadeiras)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: Sob Orçamento</strong>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem; border-radius: 20px;">
-                            <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
-                                class="card-img-top"
-                                src="https://goncaloferreira966.github.io/Projeto_RR/assets/img3.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 style="color: #112c4c;" class="card-title">Lavagem de Colchões</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Solteiro (Duas Faces)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 49€</strong>
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Casal (Duas Faces)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 69€</strong>
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> Queen Size (Duas Faces)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 79€</strong>
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i style="color: #25d366;" class="fa fa-check"
-                                        aria-hidden="true"></i> King Size (Duas Faces)</li>
-                            </ul>
-                            <div class="card-body">
-                                <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
 
 
 
@@ -861,5 +903,4 @@
     </script>
 
 </body>
-
 </html>
