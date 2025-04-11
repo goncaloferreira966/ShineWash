@@ -67,19 +67,19 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://goncaloferreira966.github.io/Projeto_RR/assets/parallax1.jpg');
+  background-image: url('https://goncaloferreira966.github.io/ShineWash/assets/parallax1.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("https://goncaloferreira966.github.io/Projeto_RR/assets/parallax2.jpg");
+  background-image: url("https://goncaloferreira966.github.io/ShineWash/assets/parallax2.jpg");
   min-height: 700px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("https://goncaloferreira966.github.io/Projeto_RR/assets/parallax3.jpg");
+  background-image: url("https://goncaloferreira966.github.io/ShineWash/assets/parallax3.jpg");
   min-height: 700px;
 }
 
