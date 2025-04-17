@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Shine Wash</title>
     <link rel="icon" type="image/x-icon" href="https://goncaloferreira966.github.io/ShineWash/assets/parallax1.jpg">
@@ -46,10 +45,14 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="details.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-car"></i> Serviços</a>
-            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> Sobre</a>
-            <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contacto</a>
+            <a href="details.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-car"></i>
+                Serviços</a>
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-user"></i> Sobre</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-th"></i> Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i>
+                Contacto</a>
         </div>
     </div>
 
@@ -68,15 +71,17 @@
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
         <h3 style="color: #112c4c;" class="w3-center w3-padding-32">Os Meus Serviços</h3>
         <ul class="nav nav-tabs justify-content-center">
-            <li class="active"><a style="color: #112c4c;" id="bronze-tab" data-toggle="tab" href="#bronze">Pack Bronze</a></li>
+            <li class="active"><a style="color: #112c4c;" id="bronze-tab" data-toggle="tab" href="#bronze">Pack
+                    Bronze</a></li>
             <li><a style="color: #112c4c;" id="ouro-tab" data-toggle="tab" href="#ouro">Pack Ouro</a></li>
-            <li><a  style="color: #112c4c;" id="platina-tab" data-toggle="tab" href="#platina">Pack Platina</a></li>
-            <li><a style="color: #112c4c;" id="outros-tab" data-toggle="tab" href="#outros">Outros Serviços Auto</a></li>
+            <li><a style="color: #112c4c;" id="platina-tab" data-toggle="tab" href="#platina">Pack Platina</a></li>
+            <li><a style="color: #112c4c;" id="outros-tab" data-toggle="tab" href="#outros">Outros Serviços Auto</a>
+            </li>
             <li><a style="color: #112c4c;" id="estofados-tab" data-toggle="tab" href="#estofados">Estofados</a></li>
         </ul>
 
 
-   
+
 
         <div class="tab-content">
             <div id="bronze" class="tab-pane fade in active">
@@ -239,12 +244,8 @@
                 <div class="w3-content w3-container w3-padding-32" id="portfolio2">
                     <h4 style="text-align: center;color: #112c4c;">Pack Ouro</h4>
                     <div class="row">
-
                         <div class="container">
                             <div class="row justify-content-center col-md-12">
-
-
-
                                 <div class="col-12 col-lg-4 mt-4 d-flex justify-content-center">
                                     <div class="card" style="width: 28rem; border-radius: 20px;">
                                         <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;"
@@ -721,15 +722,9 @@
                                         <div class="card-body">
                                             <strong style="color: #112c4c;" class="list-group-item"> Preço: 89€</strong>
                                         </div>
-
-
                                     </div>
                                 </div>
-
-
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -737,16 +732,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Third Parallax Image with Portfolio Text -->
@@ -789,12 +774,43 @@
                     </div>
 
                     <select required class="w3-input w3-border"
-                        style="height: 40px; border-radius: 5px; margin-top: 0px;" name="servico" id="servico-select">
+                        style="height: 40px; border-radius: 5px; margin-top: 0px;" name="servico" id="servico-select"
+                        onchange="updatePackOptions()">
                         <option value="">Escolha o Serviço Desejado</option>
                         <option value="Interior">Interior</option>
                         <option value="Exterior">Exterior</option>
                         <option value="Interior & Exterior">Interior & Exterior</option>
                         <option value="Mobiliário">Mobiliário 🛋️</option>
+                    </select>
+
+                    <!-- Select para Pack Interior (aparece quando Interior ou Interior & Exterior são selecionados) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-interior"
+                        name="pack_interior">
+                        <option value="">Selecione o Pack Interior</option>
+                        <option value="Pack Bronze Interior">Pack Bronze Interior</option>
+                        <option value="Pack Ouro Interior">Pack Ouro Interior</option>
+                        <option value="Pack Platina Interior">Pack Platina Interior</option>
+                    </select>
+
+                    <!-- Select para Pack Exterior (aparece quando Exterior ou Interior & Exterior são selecionados) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-exterior"
+                        name="pack_exterior">
+                        <option value="">Selecione o Pack Exterior</option>
+                        <option value="Pack Bronze Exterior">Pack Bronze Exterior</option>
+                        <option value="Pack Ouro Exterior">Pack Ouro Exterior</option>
+                        <option value="Pack Platina Exterior">Pack Platina Exterior</option>
+                    </select>
+
+                    <!-- Select para Mobiliário (aparece quando Mobiliário é selecionado) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-mobiliario"
+                        name="pack_mobiliario">
+                        <option value="">Selecione o Serviço de Mobiliário</option>
+                        <option value="Lavagem de Sofás">Lavagem de Sofás (preço varia conforme tamanho)</option>
+                        <option value="Lavagem de Cadeiras">Lavagem de Cadeiras (mínimo 4 unidades)</option>
+                        <option value="Lavagem de Colchões">Lavagem de Colchões</option>
                     </select>
 
                     <input style="border-radius: 5px;margin-top: 5px;" minlength="10" id="mensagem"
@@ -840,18 +856,59 @@
 
     <script>
 
+        function updatePackOptions() {
+            const serviceSelect = document.getElementById('servico-select');
+            const packInterior = document.getElementById('pack-interior');
+            const packExterior = document.getElementById('pack-exterior');
+            const packMobiliario = document.getElementById('pack-mobiliario');
+
+            // Esconder todos primeiro
+            packInterior.style.display = 'none';
+            packExterior.style.display = 'none';
+            packMobiliario.style.display = 'none';
+
+            // Mostrar os relevantes baseado na seleção
+            if (serviceSelect.value === 'Interior') {
+                packInterior.style.display = 'block';
+                packInterior.required = true;
+            } else if (serviceSelect.value === 'Exterior') {
+                packExterior.style.display = 'block';
+                packExterior.required = true;
+            } else if (serviceSelect.value === 'Interior & Exterior') {
+                packInterior.style.display = 'block';
+                packExterior.style.display = 'block';
+                packInterior.required = true;
+                packExterior.required = true;
+            } else if (serviceSelect.value === 'Mobiliário') {
+                packMobiliario.style.display = 'block';
+                packMobiliario.required = true;
+            }
+        }
+
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 
         function sendEmail(event) {
             event.preventDefault();
             emailjs.init("VgoF2A8DM_u-ybzyQ");
+
+            const service = document.getElementById("servico-select").value;
+            let packDetails = "";
+
+            if (service === "Interior") {
+                packDetails = `Pack Interior selecionado: ${document.getElementById("pack-interior").value}`;
+            } else if (service === "Exterior") {
+                packDetails = `Pack Exterior selecionado: ${document.getElementById("pack-exterior").value}`;
+            } else if (service === "Interior & Exterior") {
+                packDetails = `Pack Interior: ${document.getElementById("pack-interior").value}, Pack Exterior: ${document.getElementById("pack-exterior").value}`;
+            } else if (service === "Mobiliário") {
+                packDetails = `Serviço de Mobiliário: ${document.getElementById("pack-mobiliario").value}`;
+            }
+
             emailjs.send("service_n3j51c1", "template_krdz8yx", {
                 to_name: "Ricardo Ramos",
                 from_name: document.getElementById("name").value,
-                //from_email: "badalha81@gmail.com",
-                //subject: "subject",
-                message: `Serviço Desejado: ${document.getElementById("servico-select").value}.\nMorada: ${document.getElementById("mensagem").value}.\nContacto: ${document.getElementById("email").value}`
+                message: `Serviço Desejado: ${service}.\n${packDetails}\nMorada: ${document.getElementById("mensagem").value}.\nContacto: ${document.getElementById("email").value}`
             })
                 .then(function (response) {
                     console.log("Resposta do servidor:", response);
@@ -903,4 +960,5 @@
     </script>
 
 </body>
+
 </html>

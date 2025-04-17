@@ -207,31 +207,70 @@
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Torres Vedras, Lisboa<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telemóvel: +351 965 127 148<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> E-mail: shinewash2560@gmail.com<br>
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Torres Vedras,
+                    Lisboa<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telemóvel: +351 965
+                    127 148<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> E-mail:
+                    shinewash2560@gmail.com<br>
                 </div>
                 <p>Fico à espera do seu contacto:</p>
                 <form onsubmit="sendEmail(event)">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input style="border-radius: 5px; margin-top: 5px;" minlength="3" id="name" class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
+                            <input style="border-radius: 5px; margin-top: 5px;" minlength="3" id="name"
+                                class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input style="border-radius: 5px; margin-top: 5px;" id="email" class="w3-input w3-border" type="tel" placeholder="Contacto" required name="Email">
+                            <input style="border-radius: 5px; margin-top: 5px;" id="email" class="w3-input w3-border"
+                                type="tel" placeholder="Contacto" required name="Email">
                         </div>
                     </div>
 
-                    <select required class="w3-input w3-border" style="height: 40px; border-radius: 5px; margin-top: 0px;" name="servico" id="servico-select">
+                    <select required class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 0px;" name="servico" id="servico-select"
+                        onchange="updatePackOptions()">
                         <option value="">Escolha o Serviço Desejado</option>
                         <option value="Interior">Interior</option>
                         <option value="Exterior">Exterior</option>
                         <option value="Interior & Exterior">Interior & Exterior</option>
                         <option value="Mobiliário">Mobiliário 🛋️</option>
-                      </select>
-                      
-                    <input style="border-radius: 5px;margin-top: 5px;" minlength="10" id="mensagem" class="w3-input w3-border" type="text" placeholder="Morada" required name="Message">
-                    <button style="border-radius: 5px; background-color: #112c4c !important;" class="w3-button w3-black w3-right w3-section" type="submit">
+                    </select>
+
+                    <!-- Select para Pack Interior (aparece quando Interior ou Interior & Exterior são selecionados) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-interior"
+                        name="pack_interior">
+                        <option value="">Selecione o Pack Interior</option>
+                        <option value="Pack Bronze Interior">Pack Bronze Interior</option>
+                        <option value="Pack Ouro Interior">Pack Ouro Interior</option>
+                        <option value="Pack Platina Interior">Pack Platina Interior</option>
+                    </select>
+
+                    <!-- Select para Pack Exterior (aparece quando Exterior ou Interior & Exterior são selecionados) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-exterior"
+                        name="pack_exterior">
+                        <option value="">Selecione o Pack Exterior</option>
+                        <option value="Pack Bronze Exterior">Pack Bronze Exterior</option>
+                        <option value="Pack Ouro Exterior">Pack Ouro Exterior</option>
+                        <option value="Pack Platina Exterior">Pack Platina Exterior</option>
+                    </select>
+
+                    <!-- Select para Mobiliário (aparece quando Mobiliário é selecionado) -->
+                    <select class="w3-input w3-border"
+                        style="height: 40px; border-radius: 5px; margin-top: 5px; display: none;" id="pack-mobiliario"
+                        name="pack_mobiliario">
+                        <option value="">Selecione o Serviço de Mobiliário</option>
+                        <option value="Lavagem de Sofás">Lavagem de Sofás (preço varia conforme tamanho)</option>
+                        <option value="Lavagem de Cadeiras">Lavagem de Cadeiras (mínimo 4 unidades)</option>
+                        <option value="Lavagem de Colchões">Lavagem de Colchões</option>
+                    </select>
+
+                    <input style="border-radius: 5px;margin-top: 5px;" minlength="10" id="mensagem"
+                        class="w3-input w3-border" type="text" placeholder="Morada" required name="Message">
+                    <button style="border-radius: 5px; background-color: #112c4c !important;"
+                        class="w3-button w3-black w3-right w3-section" type="submit">
                         <i class="fa fa-paper-plane"></i> Enviar Mensagem
                     </button>
                 </form>
@@ -270,36 +309,77 @@
     </footer>
 
     <script>
+                function updatePackOptions() {
+            const serviceSelect = document.getElementById('servico-select');
+            const packInterior = document.getElementById('pack-interior');
+            const packExterior = document.getElementById('pack-exterior');
+            const packMobiliario = document.getElementById('pack-mobiliario');
+
+            // Esconder todos primeiro
+            packInterior.style.display = 'none';
+            packExterior.style.display = 'none';
+            packMobiliario.style.display = 'none';
+
+            // Mostrar os relevantes baseado na seleção
+            if (serviceSelect.value === 'Interior') {
+                packInterior.style.display = 'block';
+                packInterior.required = true;
+            } else if (serviceSelect.value === 'Exterior') {
+                packExterior.style.display = 'block';
+                packExterior.required = true;
+            } else if (serviceSelect.value === 'Interior & Exterior') {
+                packInterior.style.display = 'block';
+                packExterior.style.display = 'block';
+                packInterior.required = true;
+                packExterior.required = true;
+            } else if (serviceSelect.value === 'Mobiliário') {
+                packMobiliario.style.display = 'block';
+                packMobiliario.required = true;
+            }
+        }
+
 
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
         function sendEmail(event) {
             event.preventDefault();
-            emailjs.init("VgoF2A8DM_u-ybzyQ"); 
+            emailjs.init("VgoF2A8DM_u-ybzyQ");
+
+            const service = document.getElementById("servico-select").value;
+            let packDetails = "";
+
+            if (service === "Interior") {
+                packDetails = `Pack Interior selecionado: ${document.getElementById("pack-interior").value}`;
+            } else if (service === "Exterior") {
+                packDetails = `Pack Exterior selecionado: ${document.getElementById("pack-exterior").value}`;
+            } else if (service === "Interior & Exterior") {
+                packDetails = `Pack Interior: ${document.getElementById("pack-interior").value}, Pack Exterior: ${document.getElementById("pack-exterior").value}`;
+            } else if (service === "Mobiliário") {
+                packDetails = `Serviço de Mobiliário: ${document.getElementById("pack-mobiliario").value}`;
+            }
+
             emailjs.send("service_n3j51c1", "template_krdz8yx", {
                 to_name: "Ricardo Ramos",
                 from_name: document.getElementById("name").value,
-                //from_email: "badalha81@gmail.com",
-                //subject: "subject",
-                message: `Serviço Desejado: ${document.getElementById("servico-select").value}.\nMorada: ${document.getElementById("mensagem").value}.\nContacto: ${document.getElementById("email").value}`
+                message: `Serviço Desejado: ${service}.\n${packDetails}\nMorada: ${document.getElementById("mensagem").value}.\nContacto: ${document.getElementById("email").value}`
             })
-            .then(function(response) {
-                console.log("Resposta do servidor:", response);
+                .then(function (response) {
+                    console.log("Resposta do servidor:", response);
                     Swal.fire({
                         title: 'Mensagem Enviada!',
                         text: 'A sua mensagem foi enviada com sucesso.',
                         icon: 'success',
                         confirmButtonText: 'Ok'
                     });
-            }, function(error) {
-                console.error("Erro ao enviar email:", error);
+                }, function (error) {
+                    console.error("Erro ao enviar email:", error);
                     Swal.fire({
                         title: 'Erro!',
                         text: 'Ocorreu um erro ao enviar a mensagem.',
                         icon: 'error',
                         confirmButtonText: 'Tentar Novamente'
                     });
-            });
+                });
         }
 
         // Modal Image Gallery
